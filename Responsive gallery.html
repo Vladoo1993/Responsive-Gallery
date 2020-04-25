@@ -1,0 +1,94 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive gallery</title>
+    <style>
+
+.body {
+                font-family: sans-serif;
+            }
+
+            img {
+                width: 100%;
+                background-color: rgb(40, 159, 231);
+                border-radius: 10px 10px 0px 0px;
+            }
+
+            #container {
+                max-width: 960px;
+                width: 90%;
+                margin: 0 auto;
+            }
+
+            #galerija {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                grid-gap: 4px;
+              
+
+            }
+            .slika {
+                width: 150px;
+                border: solid 0px;
+            }
+
+            figcaption {
+                font-size: 12px;
+                text-align: center;
+            }
+
+            @media screen and (max-width: 1024px) {
+                #galerija {
+                    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+                }
+            }
+
+            @media screen and (max-width: 768px) {
+                #galerija {
+                    grid-template-columns: 1fr 1fr 1fr;
+                    margin: 0 auto;
+                }
+            }
+
+            @media screen and (max-width: 414px) {
+                #container {
+                    margin: auto auto;
+                }
+                #galerija {
+                    grid-template-columns: 1fr;
+                }
+                h1{
+                    font-size: 21px;
+                }
+
+            }
+
+</style>
+</head>
+<body>
+
+    <div id="container">
+        <h1>Gallery Heading</h1>
+            <div id="galerija">
+                <div class="slika"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                <div class="slika"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                <div class="slika"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                <div class="slika"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                <div class="slika"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                <div class="slika"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                <div class="slika"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                <div class="slika"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                <div class="slika"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+                <div class="slika"><img src="placeholder-image.png"><figcaption>Image Title</figcaption></div>
+            </div>
+            <div id="paragraf">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum fugiat maxime, vero similique, nam officiis repellat, deleniti nulla libero ullam totam. Culpa fugiat doloremque deserunt necessitatibus possimus quam voluptate officiis nemo, corporis expedita, quis aperiam nihil nam iure assumenda vitae illum delectus nisi ipsam excepturi? Blanditiis qui sapiente corrupti esse quia maxime unde culpa! Minima harum nesciunt corrupti animi et velit, ratione facere earum quia sint voluptatem, voluptatum odio inventore nam voluptate nisi cum! Nisi commodi architecto porro voluptatibus animi sit in voluptatem reprehenderit autem, dolor harum esse recusandae dolores impedit laudantium maxime perspiciatis rerum ea ducimus omnis quisquam doloribus.</p>
+            </div>
+    </div>
+
+</body>
+  
+
+</body>
+</html>
